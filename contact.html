@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="images/favicon/safari-pinned-tab.svg"
+      color="#ff0000"
+    />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Products Details</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!------- Navigation -------->
+
+    <div class="container-header">
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html"
+            ><img
+              src="images/logo/logo-black.png"
+              class="logo"
+              alt="Neo street logo"
+          /></a>
+        </div>
+        <nav>
+          <ul id="MenuItems">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="account.html">Account</a></li>
+          </ul>
+        </nav>
+        <img
+          src="images/Menu/menu.png"
+          alt="Menu button"
+          class="menu-icon"
+          onclick="menutoggle()"
+        />
+      </div>
+    </div>
+
+    <!------- Contact module -------->
+    <div class="small-container">
+      <section class="location">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d156388.3543850543!2d20.92111263145356!3d52.233065320874864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc669a869f01%3A0x72f0be2a88ead3fc!2sWarszawa!5e0!3m2!1spl!2spl!4v1673291934034!5m2!1spl!2spl"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+
+      <section class="contact-us">
+        <div class="row-contact">
+          <div class="contact-col">
+            <div>
+              <i class="fa fa-home" aria-hidden="true"></i>
+              <span>
+                <a href="https://goo.gl/maps/BoRxE9oAye3Tv27S6" target="_blank"
+                  ><h5>Neo Street Shop</h5></a
+                >
+                <p>Warsaw 00-460</p>
+              </span>
+            </div>
+            <div>
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              <span>
+                <a href="tel:+48123456789"><h5>+48 123-456-789</h5></a>
+                <p>Phone number</p>
+              </span>
+            </div>
+            <div>
+              <i class="fa fa-envelope-o" aria-hidden="true"></i>
+              <span>
+                <a href="mailto:NeoStreet@shop.com"
+                  ><h5>NeoStreet@shop.com</h5></a
+                >
+                <p>Email address</p>
+              </span>
+            </div>
+          </div>
+          <div class="contact-col">
+            <form action="form-handler.php" method="post">
+              <input
+                type="text"
+                name="name"
+                placeholder="Enter your name"
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Enter your email adress"
+                required
+              />
+              <input
+                type="text"
+                name="subject"
+                placeholder="Enter your subject"
+                required
+              />
+              <textarea
+                rows="8"
+                name="message"
+                placeholder="Message"
+                required
+              ></textarea>
+              <button type="submit" class="button-contact">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!------- Footer -------->
+
+    <footer>
+      <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+      </div>
+      <ul class="social_icon">
+        <li>
+          <a href="https://facebook.com/" target="_blank"
+            ><ion-icon name="logo-facebook"></ion-icon
+          ></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/" target="_blank"
+            ><ion-icon name="logo-twitter"></ion-icon
+          ></a>
+        </li>
+        <li>
+          <a href="https://linkedin.com/" target="_blank"
+            ><ion-icon name="logo-linkedin"></ion-icon
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/" target="_blank"
+            ><ion-icon name="logo-instagram"></ion-icon
+          ></a>
+        </li>
+      </ul>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="account.html">Account</a></li>
+      </ul>
+      <p>
+        Made with <i class="fa fa-heart-o" aria-hidden="true"></i> by Kuba
+        Kopacz
+      </p>
+    </footer>
+
+    <!------- Js Toogle menu -------->
+
+    <script>
+      var MenuItems = document.getElementById("MenuItems");
+
+      MenuItems.style.maxHeight = "0px";
+
+      function menutoggle() {
+        if (MenuItems.style.maxHeight == "0px") {
+          MenuItems.style.maxHeight = "200px";
+        } else {
+          MenuItems.style.maxHeight = "0px";
+        }
+      }
+    </script>
+
+    <!------- Footer icons -------->
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

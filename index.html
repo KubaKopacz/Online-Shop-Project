@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="images/favicon/safari-pinned-tab.svg"
+      color="#ff0000"
+    />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Neo Street</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!------- Popup -------->
+    <div class="popup">
+      <div class="img-popup"></div>
+      <div class="content">
+        <h1>Hello World!</h1>
+        <p>
+          Welcome to the Neo Street project. The project is inspired by various
+          tutorials. The website is made by myself. I'm still learning
+          programming. The website has a working shopping cart with the option
+          to place an order and a few other things. Have fun, all orders on the
+          website will be paid by me :) Jakub Kopacz
+
+          <br /><br />Languages & tools:<br />HTML<br />JavaScript<br />CSS<br /><br />Links
+          to my other projects:<br /><a
+            href="https://shop-project-jk.netlify.app/"
+            target="_blank"
+            >https://shop-project-jk.netlify.app/<br
+          /></a>
+          <a href="https://website-jk.netlify.app/" target="_blank"
+            >https://website-jk.netlify.app/</a
+          ><br />
+          <a href="https://jakub-kopacz-cv.netlify.app/" target="_blank"
+            >https://jakub-kopacz-cv.netlify.app/</a
+          ><br />
+        </p>
+        <button id="close" class="popup-button" href="#">Lets Go</button>
+      </div>
+      <i class="fa fa-arrow-down scroll" aria-hidden="true"></i>
+    </div>
+
+    <!------- Blur -------->
+
+    <div class="blur"></div>
+
+    <!------- Navigation & Header -------->
+    <div class="header">
+      <div class="container-header">
+        <div class="navbar">
+          <div class="logo">
+            <a href="index.html"
+              ><img
+                src="images/logo/logo-white.png"
+                class="logo"
+                alt="Neo Street logo"
+            /></a>
+          </div>
+          <nav>
+            <ul id="MenuItems">
+              <li><a class="a-header" href="index.html">Home</a></li>
+              <li><a class="a-header" href="products.html">Products</a></li>
+              <li><a class="a-header" href="about.html">About</a></li>
+              <li><a class="a-header" href="contact.html">Contact</a></li>
+              <li><a class="a-header" href="account.html">Account</a></li>
+            </ul>
+          </nav>
+          <i class="fa fa-shopping-cart" id="cart-icon"></i>
+          <div class="cart">
+            <h2 class="cart-title">Your Cart</h2>
+            <!-- Content -->
+            <div class="cart-content"></div>
+            <!-- Total -->
+            <div class="total">
+              <div class="total-title">Total</div>
+              <div class="total-price">$0</div>
+            </div>
+            <!-- Buy button -->
+            <button type="button" class="btn-buy">Buy Now</button>
+            <!-- Cart Close -->
+            <i class="fa fa-times" id="close-cart" aria-hidden="true"></i>
+          </div>
+          <img
+            src="images/Menu/menu-header.png"
+            alt="Menu button"
+            class="menu-icon"
+            onclick="menutoggle()"
+          />
+        </div>
+      </div>
+      <div class="newsletter">
+        <form class="join" action="">
+          <h1>Join Our Newsletter</h1>
+          <p>
+            Subscribe to our newsletter to get shop update previews, access to
+            online seconds sales, and one NBA joke 2 month.
+          </p>
+          <div class="email-box">
+            <i class="fa fa-envelope"></i>
+            <input
+              class="tbox"
+              type="email"
+              name=""
+              value=""
+              placeholder="Enter your email"
+            />
+            <button class="btn-nws" type="button" name="button">
+              Subscribe
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!----- Slider ----->
+
+    <section class="slide-brands">
+      <div class="slider">
+        <div class="slide-track">
+          <div class="slide">
+            <a href=""
+              ><img src="images/brands/1.svg" alt="Sport brand logo"
+            /></a>
+          </div>
+          <div class="slide">
+            <a href=""
+              ><img src="images/brands/2.svg" alt="Sport brand logo"
+            /></a>
+          </div>
+          <div class="slide">
+            <a href=""
+              ><img src="images/brands/3.svg" alt="Sport brand logo"
+            /></a>
+          </div>
+          <div class="slide">
+            <img src="images/brands/4.svg" alt="Sport brand logo" />
+          </div>
+          <div class="slide">
+            <img src="images/brands/5.svg" alt="Sport brand logo" />
+          </div>
+          <div class="slide">
+            <img src="images/brands/6.svg" alt="Sport brand logo" />
+          </div>
+          <div class="slide">
+            <img src="images/brands/7.svg" alt="Sport brand logo" />
+          </div>
+          <div class="slide">
+            <img src="images/brands/8.svg" alt="Sport brand logo" />
+          </div>
+          <div class="slide">
+            <img src="images/brands/9.svg" alt="Sport brand logo" />
+          </div>
+          <div class="slide">
+            <img src="images/brands/10.svg" alt="Sport brand logo" />
+          </div>
+          <div class="slide">
+            <img src="images/brands/11.svg" alt="Sport brand logo" />
+          </div>
+          <div class="slide">
+            <img src="images/brands/12.svg" alt="Sport brand logo" />
+          </div>
+          <div class="slide">
+            <img src="images/brands/13.svg" alt="Sport brand logo" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!------- Boxes -------->
+
+    <div class="categories">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-3">
+            <img src="images/Category/category-1.jpg" alt="Soccer field turf" />
+            <div class="layer">
+              <h3>SOCCER</h3>
+            </div>
+          </div>
+          <div class="col-3">
+            <img
+              src="images/Category/category-2.jpg"
+              alt="Fragment of a tennis court with a tennis racket and a tennis ball"
+            />
+            <div class="layer">
+              <h3>TENIS</h3>
+            </div>
+          </div>
+          <div class="col-3">
+            <img
+              src="images/Category/category-3.jpg"
+              alt="The starting line of the running field"
+            />
+            <div class="layer">
+              <h3>RUNNING</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!------- Products -------->
+
+    <div class="small-container">
+      <h2 class="title">Summer Collection</h2>
+      <div class="small-container">
+        <div class="row row-3"></div>
+      </div>
+      <div id="products1"></div>
+    </div>
+
+    <div class="small-container">
+      <h2 class="title">Streetwear Outfits</h2>
+      <div class="small-container">
+        <div class="row row-3"></div>
+      </div>
+      <div id="products2"></div>
+    </div>
+
+    <div class="small-container">
+      <div class="row row-3">
+        <div id="search-container" class="search-hide">
+          <input type="search" id="search-input" placeholder="Search.." />
+          <button id="search">Search</button>
+        </div>
+        <div id="buttons" class="szukajka hide"></div>
+      </div>
+      <div id="products"></div>
+    </div>
+    <!------- Offer -------->
+
+    <div class="offer">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-2">
+            <img
+              src="images/Index/FIFA-Logo-old.png"
+              alt="Fifa logo with two soccer balls in which there are earth planets"
+            />
+          </div>
+          <div class="col-2">
+            <h1 style="color: #333">2022 FIFA World Cup</h1>
+            <p style="color: #333">
+              The 2022 FIFA World Cup is the 22nd FIFA World Cup, an
+              international association football tournament contested by the
+              men's national teams of FIFA's member associations. It is taking
+              place in Qatar from 20 November to 18 December 2022.
+            </p>
+            <a
+              href="https://www.fifa.com/tournaments/mens/worldcup/qatar2022"
+              target="_blank"
+              class="btn"
+              >Explore Now &#8594;</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!------- Comments -------->
+
+    <div class="testimonial">
+      <div class="small-container">
+        <div class="row">
+          <div class="col-3">
+            <i class="fa fa-quote-left"></i>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+              eligendi possimus explicabo. Sunt cum cupiditate aperiam ut
+              facilis impedit dolorum labore.
+            </p>
+            <div class="rating-comments">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+            </div>
+            <div class="brezno">
+              <img src="images/users/user-1.png" alt="Woman with brown hair" />
+            </div>
+            <h3>Lorem Ipsum</h3>
+          </div>
+          <div class="col-3">
+            <i class="fa fa-quote-left"></i>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+              eligendi possimus explicabo. Sunt cum cupiditate aperiam ut
+              facilis impedit dolorum labore.
+            </p>
+            <div class="rating-comments">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <img
+              src="images/users/user-2.png"
+              alt="Smiling girl with brown curly hair"
+            />
+            <h3>Lorem Ipsum</h3>
+          </div>
+          <div class="col-3">
+            <i class="fa fa-quote-left"></i>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+              eligendi possimus explicabo. Sunt cum cupiditate aperiam ut
+              facilis impedit dolorum labore.
+            </p>
+            <div class="rating-comments">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+              <i class="fa fa-star-o" aria-hidden="true"></i>
+            </div>
+            <img
+              src="images/users/user-3.png"
+              alt="Man with a dark beard and glasses"
+            />
+            <h3>Lorem Ipsum</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!------- Footer -------->
+
+    <footer>
+      <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+      </div>
+      <ul class="social_icon">
+        <li>
+          <a href="https://facebook.com/" target="_blank"
+            ><ion-icon name="logo-facebook"></ion-icon
+          ></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/" target="_blank"
+            ><ion-icon name="logo-twitter"></ion-icon
+          ></a>
+        </li>
+        <li>
+          <a href="https://linkedin.com/" target="_blank"
+            ><ion-icon name="logo-linkedin"></ion-icon
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/" target="_blank"
+            ><ion-icon name="logo-instagram"></ion-icon
+          ></a>
+        </li>
+      </ul>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="account.html">Account</a></li>
+      </ul>
+      <p>
+        Made with <i class="fa fa-heart-o" aria-hidden="true"></i> by Kuba
+        Kopacz
+      </p>
+    </footer>
+
+    <!------- JS -------->
+
+    <script src="index.js"></script>
+
+    <!------- Toogle menu -------->
+
+    <script>
+      var MenuItems = document.getElementById("MenuItems");
+
+      MenuItems.style.maxHeight = "0px";
+
+      function menutoggle() {
+        if (MenuItems.style.maxHeight == "0px") {
+          MenuItems.style.maxHeight = "200px";
+        } else {
+          MenuItems.style.maxHeight = "0px";
+        }
+      }
+    </script>
+
+    <!------- Footer icons -------->
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
